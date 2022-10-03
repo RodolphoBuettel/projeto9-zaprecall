@@ -38,8 +38,8 @@ export default function FlashCards({ card, n, setConcluidos, concluidos }) {
 		 setApareceRespota("none");
 		 setImagem(iconeErro);
 		 setRisco("line-through");
-		 setColor("red");
-		 setColorText("red");
+		 setColor("#ff3030");
+		 setColorText("#ff3030");
     }
 
     function QuaseNaoLembrei(){
@@ -47,8 +47,8 @@ export default function FlashCards({ card, n, setConcluidos, concluidos }) {
 		 setApareceRespota("none");
 		 setImagem(iconeQuase);
 		 setRisco("line-through");
-		 setColor("orange");
-		 setColorText("orange");
+		 setColor("#ff922e");
+		 setColorText("#ff922e");
     }
 
     function Zap(){
@@ -56,8 +56,8 @@ export default function FlashCards({ card, n, setConcluidos, concluidos }) {
 		 setApareceRespota("none");
 		 setImagem(iconeCerto);
 		 setRisco("line-through");
-		 setColor("green");
-		 setColorText("green");
+		 setColor("#2fbe34");
+		 setColorText("#2fbe34");
     }
 
 	return (
