@@ -27,7 +27,7 @@ export default function App() {
             <Logo/>
             <Fotter concluidos={concluidos} setConcluidos={setConcluidos}/>
             <Deck deck={deck} concluidos={concluidos} setConcluidos={setConcluidos}>
-                <FlashCards />
+                <FlashCards data-identifier="flashcard" />
             </Deck>
         </ScreenContainer>
     )

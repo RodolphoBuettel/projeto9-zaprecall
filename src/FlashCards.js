@@ -62,20 +62,20 @@ export default function FlashCards({ card, n, setConcluidos, concluidos }) {
 
 	return (
 		<>
-			<PerguntaFechada aparecePergunta={aparecePergunta} risco={risco} color={color} colorText={colorText}>
+			<PerguntaFechada data-identifier="flashcard-index-item" aparecePergunta={aparecePergunta} risco={risco} color={color} colorText={colorText}>
 				<p>Pergunta {n} </p>
-				<img src={imagem} onClick={VerPergunta} />
+				<img src={imagem} onClick={VerPergunta} data-identifier="flashcard-show-btn flashcard-status"/>
 			</PerguntaFechada>
-			<Pergunta habilitaPergunta={habilitaPergunta}>
+			<Pergunta habilitaPergunta={habilitaPergunta} data-identifier="flashcard-question">
 				<p>{card.pergunta}</p>
-				<img src={setaVirar} onClick={VerResposta} />
+				<img src={setaVirar} onClick={VerResposta} data-identifier="flashcard-turn-btn" />
 			</Pergunta>
-			<Resposta apareceResposta={apareceResposta}>
+			<Resposta apareceResposta={apareceResposta} data-identifier="flashcard-answer">
 				<p>{card.resposta}</p>
 				<ContainerBotoes>
-				<Botao className="naoLembrei" onClick={NaoLembrei}>Não lembrei</Botao>
-				<Botao className="quaseNaoLembrei" onClick={QuaseNaoLembrei} >Quase não lembrei</Botao>
-				<Botao className="zap" onClick={Zap} >Zap!</Botao>
+				<Botao className="naoLembrei" onClick={NaoLembrei} data-identifier="forgot-btn">Não lembrei</Botao>
+				<Botao className="quaseNaoLembrei" onClick={QuaseNaoLembrei} data-identifier="almost-forgot-btn" >Quase não lembrei</Botao>
+				<Botao className="zap" onClick={Zap} data-identifier="zap-btn" >Zap!</Botao>
 				</ContainerBotoes>
 			</Resposta>
 		</>)
