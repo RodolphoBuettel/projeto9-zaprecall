@@ -1,7 +1,7 @@
 
 import FlashCards from "./FlashCards";
 
-export default function Deck({ deck, concluidos, setConcluidos}) {
+export default function Deck({ deck, concluidos, setConcluidos,}) {
     return (
         <>
             {deck.map((card, index) =>

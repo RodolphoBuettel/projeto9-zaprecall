@@ -1,15 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-
-import setaPlay from "./assets/img/seta_play.png";
-
-import iconeCerto from "./assets/img/icone_certo.png";
-import iconeErro from "./assets/img/icone_erro.png";
-import iconeQuase from "./assets/img/icone_quase.png";
-import party from "./assets/img/party.png";
-import sad from "./assets/img/sad.png";
-
 import Logo from "./Logo";
 import Fotter from "./Fotter";
 import Deck from "./Deck";
@@ -29,7 +20,7 @@ const deck = [
 
 export default function App() {
     const [concluidos, setConcluidos] = useState(0);
-
+    
     return (
         <ScreenContainer>
             <GlobalStyle />
